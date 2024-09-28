@@ -1,6 +1,6 @@
 {
   "name": "@norastech/fetch",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "fetch api abstraction layer like axios but simpler 🤖 smaller 🎹 and faster 👽 with no dependencies",
   "main": "dist/index.js",
   "repository": {
