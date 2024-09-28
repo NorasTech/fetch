@@ -1,0 +1,24 @@
+{
+  "name": "@norastech/fetch",
+  "version": "0.1.1",
+  "description": "fetch api abstraction layer like axios but simpler 🤖 smaller 🎹 and faster 👽 with no dependencies",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NorasTech/fetch.git"
+  },
+  "author": "Kerem Noras",
+  "license": "MIT",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "publish": "npm publish --access public"
+  },
+  "bugs": {
+    "url": "https://github.com/NorasTech/fetch/issues"
+  },
+  "homepage": "https://github.com/NorasTech/fetch#readme"
+}
