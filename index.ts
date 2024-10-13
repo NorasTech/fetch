@@ -3,8 +3,9 @@ export type TDefinedRecords<TTypes = any> = Record<
   TTypes[keyof TTypes]
 >
 
-export type IRequestParams<TParamTypes = any> = {
+export type IRequestParams<TParamTypes = any, TBodyTypes = any> = {
   params?: TDefinedRecords<TParamTypes>
+  body?: RequestInit['body'] | TDefinedRecords<TBodyTypes>
 }
 
 export type TRequestMethods = 'get' | 'post' | 'put' | 'delete'
@@ -35,6 +36,14 @@ export default function buildFetcher<THeaders>({
             Object.entries(options.params).forEach(([key, value]) => {
               url.searchParams.append(key, value)
             })
+          }
+
+          if (
+            method === 'post' &&
+            options.body &&
+            typeof options.body === 'object'
+          ) {
+            options.body = JSON.stringify(options.body)
           }
 
           const response = await fetch(url, {
