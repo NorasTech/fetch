@@ -1,6 +1,6 @@
 {
   "name": "@norastech/fetch",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "fetch api abstraction layer like axios but simpler 🤖 smaller 🎹 and faster 👽 with no dependencies",
   "main": "dist/index.js",
   "repository": {
@@ -14,8 +14,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc",
-    "publish": "npm publish --access public"
+    "build": "tsc"
   },
   "bugs": {
     "url": "https://github.com/NorasTech/fetch/issues"
